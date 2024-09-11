@@ -79,52 +79,53 @@ button {
   font-size: 18px;
 }
 
-/* Media Query for Mobile Devices */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  body {
+    padding: 20px; /* Reduce padding to fit smaller screens */
+  }
+
   .resume-container {
     flex-direction: column;
-    width: 95%;
-    padding: 20px;
-  }
-
-  .left-section {
     width: 100%;
-    padding: 15px;
-    border-right: none;
-    border-bottom: 5px solid rgba(0, 0, 255, 0.89);
+    padding: 10px; /* Add padding for better spacing */
   }
 
-  .right-section {
-    width: 100%;
-    padding: 15px;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 16px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-  }
-
-  ul {
-    padding: 5px;
-    margin: 5px 0;
-  }
-
-  ul li {
-    margin: 3px 0;
-  }
-
-  button {
-    font-size: 16px;
-    margin-top: 10px;
+  .left-section, .right-section {
+    width: 100%; /* Make sections take full width */
+    border-right: none; /* Remove right border */
+    border-bottom: 5px solid rgba(0, 0, 255, 0.89); /* Add bottom border */
+    text-align: center; /* Center text alignment */
   }
 
   .profile-picture {
-    width: 120px;
-    height: 120px;
+    width: 100px; /* Reduce profile picture size */
+    height: 100px; /* Maintain aspect ratio */
+    margin-top: 10%; /* Adjust margin for smaller screens */
+  }
+
+  h1 {
+    font-size: 24px; /* Reduce font size for headings */
+  }
+
+  h3 {
+    font-size: 16px; /* Adjust font size for subheadings */
+  }
+
+  ul {
+    padding: 5px; /* Reduce padding */
+  }
+
+  ul li {
+    margin: 3px 0; /* Adjust list item spacing */
+  }
+
+  button {
+    font-size: 16px; /* Adjust button font size */
+    width: 100%; /* Make button full width */
+    padding: 10px; /* Add padding for better click area */
+  }
+
+  button:hover {
+    background-color: #f0e68c; /* Change background color on hover */
   }
 }
