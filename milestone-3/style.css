@@ -1,0 +1,144 @@
+body {
+  background-color: black;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 20px;
+  padding: 0;
+  background-color: white;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  color: black;
+}
+
+form {
+  font-size: 30px;
+  max-width: 600px;
+  margin: auto;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px black;
+  padding: 20px;
+}
+
+fieldset {
+  border: 2px solid #045c5c1c;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+}
+
+legend {
+  font-weight: bold;
+  text-align: left;
+  color: black;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: black;
+}
+
+input,
+textarea {
+  font-size: 20px;
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin: 10px;
+  border: 1px solid #045c5ca2;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  font-family: 'Times New Roman', Times, serif;
+  display: block;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: top 10px;
+  ;
+  font-size: 18px;
+
+}
+
+button:hover {
+  background-color: #168027;
+}
+
+#resumeoutput {
+  max-width: 600pt;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #3498bd00;
+  border-radius: 8px;
+  background-color: aliceblue;
+  box-shadow: 0 4px 8px black;
+
+}
+
+#resumeoutput h2 {
+  color: #2c3e50;
+}
+
+
+/* Media query for mobile screens */
+@media screen and (max-width: 600px) {
+  body {
+    margin: 10px;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  form {
+    font-size: 24px;
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  fieldset {
+    padding: 15px;
+  }
+
+  legend {
+    font-size: 20px;
+  }
+
+  label {
+    margin-top: 8px;
+    font-size: 18px;
+  }
+
+  input,
+  textarea {
+    font-size: 16px;
+    margin: 8px;
+    padding: 6px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  #resumeoutput {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  #resumeoutput h2 {
+    font-size: 24px;
+  }
+}
