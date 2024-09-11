@@ -34,45 +34,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Extra small devices (phones, less than 576px) */
-@media (max-width: 575.98px) { 
-  body {
-    padding: 10px; /* Smaller padding for very small screens */
- height:100%; 
-  }
-}
-
-/* Small devices (phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) { 
-  .resume-container {
-    padding: 15px;
-    width:20px
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .left-section {
-    padding: 20px;
-    height:
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-  .resume-container {
-    padding: 25px;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  .resume-container {
-    padding: 30px;
-  }
-}
-
-
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -117,6 +78,59 @@ button {
   margin-top: 10px;
   font-size: 18px;
 }
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  body {
+    padding: 20px; /* Reduce body padding for smaller screens */
+  }
+
+  .resume-container {
+    flex-direction: column; /* Stack the sections vertically */
+    width: 95%; /* Make the container width closer to the full screen */
+    box-shadow: none; /* Simplify shadow for smaller screens */
+  }
+
+  .left-section {
+    width: 100%; /* Full width for the left section */
+    border-right: none; /* Remove right border */
+    border-bottom: 5px solid rgba(0, 0, 255, 0.89); /* Add bottom border */
+    font-size: 18px; /* Adjust font size for readability */
+  }
+
+  .profile-picture {
+    width: 100px; /* Smaller profile picture */
+    height: 100px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 24px; /* Adjust header size */
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 16px; /* Adjust sub-header size */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: none; /* Simplify shadow for smaller screens */
+  }
+
+  ul {
+    padding-left: 20px; /* Adjust padding for list items */
+  }
+
+  .right-section {
+    width: 100%; /* Full width for the right section */
+    padding: 15px; /* Adjust padding */
+  }
+
+  button {
+    font-size: 16px; /* Adjust button font size */
+    margin-top: 8px;
+  }
+}
+
 
 button:hover {
   background-color: blanchedalmond
