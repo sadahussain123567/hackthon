@@ -78,60 +78,53 @@ button {
   margin-top: 10px;
   font-size: 18px;
 }
-/* Media Query for Mobile Screens */
-@media (max-width: 768px) {
-  body {
-    padding: 20px; /* Reduce body padding for smaller screens */
-  }
 
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
   .resume-container {
-    flex-direction: column; /* Stack the sections vertically */
-    width: 100%; /* Make the container width closer to the full screen */
-    box-shadow: none; /* Simplify shadow for smaller screens */
+    flex-direction: column;
+    width: 95%;
+    padding: 20px;
   }
 
   .left-section {
-    width: 100%; /* Full width for the left section */
-    border-right: none; /* Remove right border */
-    border-bottom: 5px solid rgba(0, 0, 255, 0.89); /* Add bottom border */
-    font-size: 18px; /* Adjust font size for readability */
-  }
-
-  .profile-picture {
-    width: 100px; /* Smaller profile picture */
-    height: 100px;
-    margin-top: 5%;
-    margin-bottom: 10px;
-  }
-
-  h1 {
-    font-size: 24px; /* Adjust header size */
-    margin-bottom: 20px;
-  }
-
-  h3 {
-    font-size: 16px; /* Adjust sub-header size */
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: none; /* Simplify shadow for smaller screens */
-  }
-
-  ul {
-    padding-left: 20px; /* Adjust padding for list items */
+    width: 100%;
+    padding: 15px;
+    border-right: none;
+    border-bottom: 5px solid rgba(0, 0, 255, 0.89);
   }
 
   .right-section {
-    width: 100%; /* Full width for the right section */
-    padding: 15px; /* Adjust padding */
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  ul {
+    padding: 5px;
+    margin: 5px 0;
+  }
+
+  ul li {
+    margin: 3px 0;
   }
 
   button {
-    font-size: 16px; /* Adjust button font size */
-    margin-top: 8px;
+    font-size: 16px;
+    margin-top: 10px;
   }
-}
 
-
-button:hover {
-  background-color: blanchedalmond
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
 }
