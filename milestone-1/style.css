@@ -34,7 +34,7 @@ body {
   margin-bottom: 20px;
 }
 
-@media(min-width:200px) and (max-width:768px){
+@media(min-width:100px) and (max-width:1500px){
   .resume-container{
     padding: 20px;
   }
