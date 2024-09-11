@@ -28,6 +28,8 @@ document.getElementById(`resumeform`)?.addEventListener(`submit`, function (even
 <h3>Education</h3>
 <P>${education}</p>
 
+<h3>Experience</h3>
+<P>${experience}</p>
 <h3>Skills</h3>
 <P>${skill}</p>
 `
