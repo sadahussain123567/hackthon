@@ -86,7 +86,7 @@ button {
 
   .resume-container {
     flex-direction: column; /* Stack the sections vertically */
-    width: 95%; /* Make the container width closer to the full screen */
+    width: 100%; /* Make the container width closer to the full screen */
     box-shadow: none; /* Simplify shadow for smaller screens */
   }
 
