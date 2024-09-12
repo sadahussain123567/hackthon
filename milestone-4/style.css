@@ -90,55 +90,72 @@ button:hover {
   color: #2c3e50;
 }
 
+.profilepicture {
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #3498bd;
+  box-shadow: 0 4px 8px rgba(11, 7, 211, 0.5);
+  border-radius: 500%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
 
 /* Media query for mobile screens */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   body {
     margin: 10px;
-    padding: 0;
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 32px;
+    /* Smaller font size for mobile screens */
   }
 
   form {
-    font-size: 24px;
+    font-size: 20px;
+    /* Reduce font size for better fit */
     padding: 15px;
-    max-width: 100%;
+    /* Less padding to fit the screen */
+    box-shadow: 0 2px 4px black;
+    /* Softer shadow */
   }
 
   fieldset {
     padding: 15px;
-  }
-
-  legend {
-    font-size: 20px;
-  }
-
-  label {
-    margin-top: 8px;
-    font-size: 18px;
+    /* Reduce padding inside fieldset */
+    margin-bottom: 15px;
+    /* Less margin for a compact layout */
   }
 
   input,
   textarea {
     font-size: 16px;
-    margin: 8px;
+    /* Smaller font size */
     padding: 6px;
+    /* Less padding for smaller inputs */
+    margin: 8px 0;
+    /* Adjust margin for better alignment */
   }
 
   button {
-    font-size: 16px;
     padding: 8px;
+    /* Reduce padding to fit smaller screens */
+    font-size: 16px;
+    /* Smaller font size for button text */
   }
 
   #resumeoutput {
     padding: 15px;
-    max-width: 100%;
+    /* Reduce padding inside resume output */
+    box-shadow: 0 2px 4px black;
+    /* Softer shadow */
   }
 
-  #resumeoutput h2 {
-    font-size: 24px;
+  .profilepicture {
+    width: 100px;
+    /* Smaller profile picture */
+    height: 100px;
+    /* Keep the same aspect ratio */
   }
 }
