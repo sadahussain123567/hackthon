@@ -157,5 +157,6 @@ button:hover {
     /* Smaller profile picture */
     height: 50px;
     /* Keep the same aspect ratio */
+    border-radius: 50%;
   }
 }
