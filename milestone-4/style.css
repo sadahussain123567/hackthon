@@ -153,8 +153,8 @@ button:hover {
   }
 
   .profilepicture {
-    width: 100px;  /* Smaller width for mobile screens */
-    height: 100px; /* Smaller height to maintain aspect ratio */
+    width: 10px;  /* Smaller width for mobile screens */
+    height: 10px; /* Smaller height to maintain aspect ratio */
     border-radius: 50%; /* Maintain circular shape with a smaller size */
     box-shadow: 0 2px 4px rgba(11, 7, 211, 0.3); /* Softer shadow for mobile */
   }
