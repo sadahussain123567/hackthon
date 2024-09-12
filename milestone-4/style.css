@@ -153,9 +153,9 @@ button:hover {
   }
 
   .profilepicture {
-    width: 100px;
+    width: 50px;
     /* Smaller profile picture */
-    height: 100px;
+    height: 50px;
     /* Keep the same aspect ratio */
   }
 }
