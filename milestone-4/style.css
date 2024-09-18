@@ -1,161 +1,140 @@
+/* Styling form and resume sections */
+
 body {
-  background-color: black;
-  color: black;
   font-family: 'Times New Roman', Times, serif;
   margin: 20px;
   padding: 0;
   background-color: white;
 }
 
+form {
+  margin: auto;
+  background-color: rgba(119, 38, 212, 0.24);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(119, 38, 212, 0.904);
+  padding: 20px;
+  max-width: 600px;
+}
+
 h1 {
-  font-size: 50px;
-  font-family: 'Courier New', Courier, monospace;
   text-align: center;
   color: black;
 }
 
-form {
-  font-size: 30px;
-  max-width: 600px;
-  margin: auto;
-  background-color: antiquewhite;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px black;
-  padding: 20px;
-}
-
 fieldset {
-  border: 2px solid #045c5c1c;
+  border: 2px solid rgba(119, 38, 212, 0.904);
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
   background-color: aliceblue;
+  font-size: 25px;
 }
 
 legend {
   font-weight: bold;
   text-align: left;
-  color: black;
+  color: rgb(34, 29, 29);
 }
 
 label {
   display: block;
   margin-top: 10px;
   color: black;
+
 }
 
-input,
-textarea {
+input,textarea {
+  margin-top: 4px;
   font-size: 20px;
-  width: calc(100% - 16px);
   padding: 8px;
-  margin: 10px;
-  border: 1px solid #045c5ca2;
-  border-radius: 6px;
+  width: calc(100% - 1px);
+  border: 1px solid rgba(119, 38, 212, 0.904);
+  border-radius: 4px;
   box-sizing: border-box;
 }
 
 button {
-  font-family: 'Times New Roman', Times, serif;
   display: block;
-  color: white;
   width: 100%;
-  padding: 10px;
-  background-color: black;
+  background-color: rgba(119, 38, 212, 0.226);
+  color: rgba(79, 4, 255, 0.829);
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-  margin: top 10px;
-  ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
   font-size: 18px;
-
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 10px;
+  cursor: pointer;
+   ;
 }
 
-button:hover {
-  background-color: #168027;
+button:hover{
+  color: rgb(255, 12, 12) (9, 255, 0);
 }
 
-#resumeoutput {
-  max-width: 600pt;
+#resume-display {
+  max-width: 600px;
   margin: auto;
   padding: 20px;
-  border: 2px solid #3498bd00;
+  border: 2px solid skyblue;
   border-radius: 8px;
-  background-color: aliceblue;
-  box-shadow: 0 4px 8px black;
-
+  background-color: rgb(228, 242, 255);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.253);
+  outline: none;
 }
 
-#resumeoutput h2 {
-  color: #2c3e50;
+#resume-display h2 {
+  color: black;
 }
 
-.profilepicture {
-  display: block;
-  margin: 0 auto;
-  border: 2px solid #3498bd;
-  box-shadow: 0 4px 8px rgba(11, 7, 211, 0.5);
-  border-radius: 500%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
+/* Media Queries for Responsiveness */
 
-/* Media query for mobile screens */
+/* For small screens (max-width: 600px) */
 @media (max-width: 600px) {
-  body {
-    margin: 10px;
-  }
-
-  h1 {
-    font-size: 32px;
-    /* Smaller font size for mobile screens */
-  }
-
-  form {
-    font-size: 20px;
-    /* Reduce font size for better fit */
+  form, #resume-display {
+    max-width: 100%;
     padding: 15px;
-    /* Less padding to fit the screen */
-    box-shadow: 0 2px 4px black;
-    /* Softer shadow */
   }
 
   fieldset {
-    padding: 15px;
-    /* Reduce padding inside fieldset */
-    margin-bottom: 15px;
-    /* Less margin for a compact layout */
-  }
-
-  input,
-  textarea {
-    font-size: 16px;
-    /* Smaller font size */
-    padding: 6px;
-    /* Less padding for smaller inputs */
-    margin: 8px 0;
-    /* Adjust margin for better alignment */
+    font-size: 20px;
   }
 
   button {
-    padding: 8px;
-    /* Reduce padding to fit smaller screens */
     font-size: 16px;
-    /* Smaller font size for button text */
   }
 
-  #resumeoutput {
-    padding: 15px;
-    /* Reduce padding inside resume output */
-    box-shadow: 0 2px 4px black;
-    /* Softer shadow */
+  input, textarea {
+    font-size: 18px;
   }
 
-  .profilepicture {
-    width: 10px;  /* Smaller width for mobile screens */
-    height: 10px; /* Smaller height to maintain aspect ratio */
-    border-radius: 50%; /* Maintain circular shape with a smaller size */
-    box-shadow: 0 2px 4px rgba(11, 7, 211, 0.3); /* Softer shadow for mobile */
+  h1, #resume-display h2 {
+    font-size: 22px;
   }
 }
+
+/* For medium screens (601px - 1024px, tablets and smaller desktops) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  form, #resume-display {
+    max-width: 80%;
+    padding: 20px;
+  }
+
+  fieldset {
+    font-size: 22px;
+  }
+
+  button {
+    font-size: 18px;
+  }
+
+  input, textarea {
+    font-size: 20px;
+  }
+
+  h1, #resume-display h2 {
+    font-size: 24px;
+  }
+}
+
