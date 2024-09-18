@@ -1,61 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume Builder</title>
+  <title>Editable Resume Builder</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <h1>Editable Resume Builder Made By Saddam</h1>
-  <form id="resumeform">
-    <fieldset>
-      <legend>Personal Information</legend>
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Write name" name="name" required><br>
+  <h1> Editable Resume Builder</h1>
+ <form id="resume-form">
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Write name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Write email" name="email" required><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" placeholder="Write email" required>
 
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" placeholder="Write phone number" name="phone" required><br>
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" placeholder="Write phone number" required>
+  </fieldset>
+<fieldset>
+  <legend>Education</legend>
+  <label for="education">Education</label>
+  <textarea id="education" placeholder="Enter your education" rows="4" required></textarea>
+</fieldset>
 
-      <label for="profilepicture">Profile Picture:</label>
-      <input type="file" id="profilepicture" name="profilepicture" accept="image/*" required><br>
-    </fieldset>
+<fieldset>
+  <legend>Experience</legend>
+  <label for="experience">Experience</label>
+  <textarea id="experience" placeholder="Enter your experience" rows="4" required></textarea>
 
-    <fieldset>
-      <legend>Education</legend>
-      <label for="education">Education:</label>
-      <textarea id="education" placeholder="Enter your education" name="education" rows="4" required></textarea><br>
-    </fieldset>
+</fieldset>
+<fieldset>  
+  <legend>Skills</legend>
+  <label for="skills">Skills</label>
+  <textarea id="skills" placeholder="Enter your skills" rows="4" required></textarea>
+</fieldset>
 
-    <fieldset>
-      <legend>Experience</legend>
-      <label for="experience">Experience:</label>
-      <textarea id="experience" placeholder="Enter your experience" name="experience" rows="4" required></textarea><br>
-    </fieldset>
+<button type="submit">Generate Resume</button>
 
-    <fieldset>
-      <legend>Skills</legend>
-      <label for="skills">Skills:</label>
-      <textarea id="skills" placeholder="Enter your skills" name="skills" rows="4" required></textarea><br>
-    </fieldset>
 
-    <button type="submit">Generate Resume Below</button>
-  </form>
+ </form>
+ <br>
+ <div id="resume-display" contenteditable="true">
 
-  <div id="resumeoutput">
-    <!-- Resume Will Be Generated Below -->
-  </div>
-
-  <script src="script.js"></script>
+ </div>
+ <script src="script.js"></script> 
 </body>
-
-</html>
-
-  <script src="script.js"></script>
-</body>
-
 </html>
